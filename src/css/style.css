@@ -1,0 +1,104 @@
+body{
+    background-color: #000000;
+    overflow: hidden;
+}
+main::after{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 80vw;
+    background: linear-gradient(-233deg, black 40%, rgba(0,0,0,0) 65%) no-repeat;
+    
+}
+
+
+main .character{
+    display: none;
+    height: 100vh;
+}
+
+main .character.selected{
+    display: block;
+}
+
+main .character .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .container{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    /** (Justify) Precisa de um espaço entre os elementos **/
+    justify-content: center;
+    /** Alinhar Verticalmente **/
+    min-height: 100vh;
+    max-width: 380px;   
+    z-index: 1;
+}
+
+.container .name-character{
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.container .description{
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.container .soon{
+    background-image: url("../imagens/one-piece-logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+
+.buttons{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    
+}
+
+.buttons .btn{
+    border: none;
+    background:none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.buttons .btn img{
+    border-radius: 50%;
+    
+}
+
+.buttons .btn.selected{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgb(17, 155, 201)
+}
+
+
+
+
