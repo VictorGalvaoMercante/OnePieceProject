@@ -87,6 +87,7 @@ main .container{
     background:none;
     cursor: pointer;
     border-radius: 50%;
+    background-color: black;
 }
 
 .buttons .btn img{
